@@ -10,7 +10,82 @@
 </head>
 <body>
     <div id="wrap">
-        <header></header>
+        <header>
+            <h1><a href="#"><img src="#" alt="호랑가시나무게스트하우스"></a></h1>
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#">호랑가시나무언덕 소개</a>
+                        <ul class="lnb_depth2">
+                            <li><a href="#">숙소 소개/시설 안내</a>
+                                <ul>
+                                    <li><a href="#">라운지</a></li>
+                                    <li><a href="#">주방</a></li>
+                                    <li><a href="#">옥상테라스</a></li>
+                                </ul><!-- e.depth3 소개 -->
+                            </li>
+                        </ul><!-- e.depth2 -->
+                    </li>
+                    <li><a href="#">객실소개</a>
+                        <ul class="depth2">
+                            <li><a href="#">Standard</a>
+                                <ul class="depth3">
+                                    <li><a href="#">상세정보 및 비치품 목록</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Deluxe</a>
+                                <ul class="depth3">
+                                    <li><a href="#">상세정보 및 비치품 목록</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dormitory</a>
+                                <ul class="depth3">
+                                    <li><a href="#">상세정보 및 비치품 목록</a></li>
+                                </ul>
+                            </li>
+                            </ul>
+                    </li>
+                    <li><a href="#">예약안내</a>
+                        <ul class="depth2">
+                            <li><a href="#">실시간 예약</a></li>
+                            <li><a href="#">예약 확인/취소</a>
+                                <ul class="depth3">
+                                    <li><a href="#">예약 조회</a></li>
+                                    <li><a href="#">취소 신청</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">이용 규정 및 환불 정책</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">오시는길</a>
+                    <ul class="depth2">
+                        <li><a href="#">오시는길</a>
+                            <ul class="depth3">
+                                <li><a href="#">도보/대중 교통 경로</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">주변정보</a></li>
+                    </ul></li>
+                    <li><a href="#">고객센터</a>
+                        <ul class="depth2">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">이벤트</a>
+                                <ul class="depth3">
+                                    <li><a href="#">진행 중 이벤트</a></li>
+                                    <li><a href="#">종료 이벤트</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">이용 후기</a></li>
+                            <li><a href="#">Q&A</a>
+                                <ul class="depth3">
+                                    <li><a href="#">자주묻는 질문</a></li>
+                                    <li><a href="#">1대1 문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
         <main>
             <!-- hero배너 + 검색폼 -->
             <div id="hero_bnr">
@@ -20,7 +95,7 @@
                 </div>
                 <!-- action 객실, 날짜, 인원 정보를 저장할 서버위치-->
                 <!-- method 객실, 날짜, 인원 정보에 대한 보안여부 (post - 보안)-->
-                <form action="" method="get">
+                <form action="#" method="get">
                     <div class="room">
                         <h2>객실</h2>
                         <p>
@@ -41,13 +116,13 @@
                             </p>
                         </div>
                         <div class="day">
-                            <img src="" alt="">
+                            <img src="./" alt="#">
                             <em>2박</em>
                         </div>
                         <div class="out">
                             <h2>체크아웃</h2>
                             <p>
-                                <input type="date" value="2026-01-29" min="2026-01-29" max="2026-02-29"
+                                <input type="date" value="2026-01-29" min="2026-01-29" max="2026-03-01"
                                 name="out_date" id="out_date">
                             </p>
                         </div>
@@ -55,23 +130,13 @@
                     <div class="person">
                         <h2>인원</h2>
                         <div class="number">
-                            <p>성인 <input type="number" name="adult" id="adult" min="0"max="5"></p>
+                            <p>성인 <input type="number" name="adult" id="adult" min="0" max="5"></p>
                             <p>어린이 <input type="number" name="kid" id="kid" min="0" max="5"></p>
                         </div>
-                        <ul class="number">
-                            <li>
-                                <label for="adult">성인</label>
-                                <input type="number" id="adult" name="adult" value="1">
-                            </li>
-                            <li>
-                                <label for="kid">어린이</label>
-                                <input type="number" id="kid" name="kid" value="1">
-                            </li>
-                        </ul>
                     </div>
                     <!-- 요소 클릭 시 특정 페이지로 바로 이동하면 <a> -->
                     <!-- 요소 클릭 시 조건에 따라 분기가 갈린다면 <button> -->
-                    <p><button type="submit" id="">검색</button></p>
+                    <p><button type="submit" id="submit_btn">검색</button></p>
                 </form>
             </div>
         </main>
